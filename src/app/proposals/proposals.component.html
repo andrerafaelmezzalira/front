@@ -1,0 +1,15 @@
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <td>Nome</td>
+        <td>CPF</td>
+    </tr>
+    </thead>
+  
+    <tbody>
+        <tr *ngFor="let proposal of proposals">
+            <td>{{ proposal.name }}</td>
+            <td>{{ proposal.cpf }}</td>
+        </tr>
+    </tbody>
+  </table>
