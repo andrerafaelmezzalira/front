@@ -2,14 +2,27 @@
     <thead>
     <tr>
         <td>Nome</td>
-        <td>CPF</td>
+        <td>Idade</td>
+        <td>Sexo</td>
+        <td>Estado civil</td>
+        <td>Estado</td>
+        <td>Dependentes</td>
+        <td>Resultado Análise</td>
+        <td>Limite </td>
     </tr>
     </thead>
   
     <tbody>
         <tr *ngFor="let proposal of proposals">
             <td>{{ proposal.name }}</td>
-            <td>{{ proposal.cpf }}</td>
+            <td>{{ proposal.age }}</td>
+            <td>{{ proposal.sex }}</td>
+            <td>{{ proposal.civilStatus }}</td>
+            <td>{{ proposal.state }}</td>
+            <td>{{ proposal.dependents }}</td>
+            <td>{{ proposal.income }}</td>
+            <td>{{ proposal.result }}</td>
+            <td>{{ proposal.limit }}</td>
         </tr>
     </tbody>
   </table>
