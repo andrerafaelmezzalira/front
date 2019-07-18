@@ -11,7 +11,8 @@ Exemplo de aplicação no estilo Angular com Bootstrap.
 - Após clonar o projeto, na raiz, execute os comandos
   
 ```
-npm install -g @angular/cli
+sudo npm install -g @angular/cli
+sudo npm install
 ng serve 
 
 ```
