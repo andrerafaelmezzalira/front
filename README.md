@@ -3,8 +3,8 @@
 Exemplo de aplicação no estilo Angular com Bootstrap.
 
 ## Pré requisito
-- Nodejs 
-- NPM
+- Nodejs 10
+- NPM 6
 
 ## Preparando ambiente
 
