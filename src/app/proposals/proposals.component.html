@@ -1,3 +1,19 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="col-md-4">CPF </label>
+                    <input type="text" [(ngModel)]="cpf" class="form-control" />
+                </div>
+            </div>
+        </div>
+         <div class="form-group">
+            <button (click)="findByCpf()" class="btn btn-primary">Pesquisar</button>
+        </div>
+    </div>
+  </div>
+
 <table class="table table-hover">
     <thead>
     <tr>
@@ -7,6 +23,7 @@
         <td>Estado civil</td>
         <td>Estado</td>
         <td>Dependentes</td>
+        <td>Renda R$</td>
         <td>Resultado Análise</td>
         <td>Limite </td>
     </tr>
@@ -22,7 +39,7 @@
             <td>{{ proposal.dependents }}</td>
             <td>{{ proposal.income }}</td>
             <td>{{ proposal.result }}</td>
-            <td>{{ proposal.limit }}</td>
+            <td>{{ proposal.message }}</td>
         </tr>
     </tbody>
   </table>

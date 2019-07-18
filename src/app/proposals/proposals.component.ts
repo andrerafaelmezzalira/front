@@ -9,10 +9,17 @@ import { ProposalsService } from '../proposals.service';
 export class ProposalsComponent implements OnInit {
 
   private proposals = [];
+  private cpf = '';
 
   constructor(private service: ProposalsService) {
 
-    service.find().subscribe((res : any[])=>{
+    service.findAll().subscribe((res : any[])=>{
+      this.proposals = res;
+    });
+  }
+
+  findByCpf() { 
+    this.service.findByCpf(this.cpf).subscribe((res : any[])=>{
       this.proposals = res;
     });
   }

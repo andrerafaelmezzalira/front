@@ -9,11 +9,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProposalService {
 
-  uri = 'http://localhost:8080/proposal';
+  uri = 'http://localhost:8080/proposta';
 
   constructor(private http: HttpClient) { }
 
-  save(proposal) {
+  save(proposal:any) {
     this.http.post(`${this.uri}`, proposal)
         .subscribe(res => alert('Confira o resultado na listagem'));
   }

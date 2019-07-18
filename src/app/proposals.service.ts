@@ -7,11 +7,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProposalsService {
 
-  uri = 'http://localhost:8080/proposals';
+  uri = 'http://localhost:8080/propostas/';
 
   constructor(private http: HttpClient) { }
 
-  find() {
+  findAll() {
     return this.http.get(`${this.uri}`);
   }
+
+  findByCpf(cpf:any) {
+    return this.http.get(`${this.uri + cpf}`);
+  }
+
 }
